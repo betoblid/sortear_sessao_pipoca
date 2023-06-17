@@ -1,0 +1,144 @@
+:root{
+    --gradient-red-rosa: linear-gradient(rgb(255, 51, 0), rgb(255, 72, 0));
+    --white: #e9dada;
+    --border-gray: #171b3d;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*adicionando estilos ao navbar da pagina*/
+.container-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 14vh;
+    width: 100%;
+    position: relative;
+    color: white;
+}
+.container-header h1{
+    font: 900 26px Arial;
+    text-align: center;
+}
+#card-navbar{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    background-color: black;
+    min-height: 100vh;
+    border-top-right-radius: 20px;
+}
+#card-navbar nav{
+    margin-top: 70px;
+}
+#card-navbar a{
+    padding: 20px 60px;
+    text-decoration: none;
+    color: var(--white);
+    font: 800 18px Arial;
+}
+#card-navbar a:hover{
+    background: aqua;
+    color: black;
+}
+.container-header button{
+    position: absolute;
+    left: 5px;
+    top: 6px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.579);
+    color: white;
+    border-radius: 12px;
+}
+.container-header button img{
+    width: 50px;
+}
+#card-navbar a{
+    display: flex;
+}
+.hidden{
+    display: none;
+}
+body{
+    background: var(--gradient-red-rosa);
+    min-height: 100vh;
+}
+.container-sorte, .card-sorte, footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+.container-sorte h2{
+    color: white;
+    margin: 20px 0;
+    font: 700 30px Arial;
+}
+.card-sorte{
+    padding: 20px;
+    flex-direction: column;
+    width: 500px;
+    border-radius: 20px;
+    background-color: #00ff3763;
+}
+#text_filme, #text_serie, #text_canal{
+    padding: 20px 0;
+    color: var(--white);
+    font: 900 22px Arial;
+    box-shadow: 3px 3px 5px rgb(5, 118, 146);
+    padding: 10px 20px;
+    background: rgb(7, 7, 7);
+    text-align: center;
+    width: 90%;
+    border-radius: 15px;
+}
+#text_filme:hover, #text_serie:hover, #text_canal:hover{
+    background-color: var(--white);
+    color: black;
+}
+.box-button{
+    padding: 20px 0px;
+}
+#button-sort, #button-sort-serie, #button-sort-canal{
+    padding: 10px 25px;
+    font: 600 15px Arial;
+    border-radius: 20px;
+    background: black;
+    color: var(--white);
+}
+#button-sort:hover, #button-sort-serie:hover, #button-sort-canal:hover{
+    background: var(--border-gray);
+    color: var(--white);
+}
+footer{
+    color: var(--white);
+    font-weight: 700;
+    margin-top: 50px;
+}
+footer a{
+    text-decoration: none;
+    color: var(--white);
+}
+footer a:hover{
+    color: black;
+}
+footer a:visited{
+    color: aqua;
+}
+@media(min-width: 50px) and (max-width: 400px){
+    .card-sorte{
+        width: 100%;
+    }
+    #text-sort{
+        width: 100%;
+        font: 800 1px Arial;
+    }
+    .container-header h1{
+        margin-left: 20px;
+    }
+}

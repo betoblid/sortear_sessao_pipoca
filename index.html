@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sorteação de sessão pipoca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container-header">
+            
+            <div id="card-navbar" class="hidden">
+                <nav>
+                    <a id="filme" href="#">sorteação filme</a>
+                    <a id="serie" href="#">sorteação serie</a>
+                    <a id="canal" href="#">sorteação canal</a>
+                </nav>
+            </div>
+            <button id="button-nav"><img id="icon" src="imgs/list.svg" alt=""></button>
+            <div class="card-title">
+                <h1>sorteação de sessão pipoca</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="paragina_filme" class="on">
+            <div class="container-sorte">
+                <h2>Filmes</h2>
+                <div class="card-sorte">
+                    <div id="text_filme">
+                        nome do filme
+                    </div>
+                    <div class="box-button">
+                        <button id="button-sort">sortea filme</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--um container para series filmes e canais onde será acessado por base de funções espirado no conseito da biblioteca react routes-->
+        <div id="sorteando_series" class="hidden">
+            <div class="container-sorte ">
+                <h2>Series</h2>
+                <div class="card-sorte">
+                    <div id="text_serie">
+                        nome do serie
+                    </div>
+                    <div class="box-button">
+                        <button id="button-sort-serie">sortea serie</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--pagina canal dentro do html-->
+
+        <div id="sorteando_canal" class="hidden">
+
+            <div class="container-sorte ">
+                <h2>Canais</h2>
+                <div class="card-sorte">
+                    <div id="text_canal">
+                        nome do canal
+                    </div>
+                    <div class="box-button">
+                        <button id="button-sort-canal">sortea canal</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; - Desenvolvido por <a href="https://www.linkedin.com/in/herbert-souza-220268268/" target="_blank">herbert souza</a></p>
+    </footer>
+    <script src="funcaos.js"></script>
+    <script src="alteracaodom.js"></script>
+</body>
+</html>
